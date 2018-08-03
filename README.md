@@ -2,6 +2,6 @@
 
 Sample code from various earning materials, regarding various topics.
 
-Fibonnaci Sequence
-Binary Searching
-Hash Tables
+#####Fibonnaci Sequence
+#####Binary Searching
+#####Hash Tables

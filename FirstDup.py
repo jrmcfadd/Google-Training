@@ -11,7 +11,6 @@ def firstDuplicate(a):
             else:
                 pass
 
-    # analyze index of second entries
     if len(dictSecondIdx) == 0:
         return -1
     else:

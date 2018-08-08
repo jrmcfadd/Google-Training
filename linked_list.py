@@ -96,28 +96,38 @@ class LinkedList(object):
             return newll;
         return self;
 
+def countNodes(head):
+    if head:
+        this_node = head
+        count = 1
+        while this_node.get_next():
+            count +=1
+            this_node = this_node.get_next()
+        return count
+    else:
+        return 0
+
 
 def main():
     myList = LinkedList()
     myList.add(5)
     myList.add(9)
     myList.add(3)
-    myList.add(8)
-    myList.add(9)
-    myList.add(9)
-    myList.add(9)
-    myList.add(9)
-    myList.add(9)
+    myList.add(6)
+    myList.add(2)
+    myList.add(1)
+    myList.add(7)
     print("size=" + str(myList.get_size()))
     myList.print_list()
     myList = myList.sort()
     myList.print_list()
-    myList.remove(8)
+    #myList.remove(8)
     print("size=" + str(myList.get_size()))
-    print("Remove 15", myList.remove(15))
+    #print("Remove 9", myList.remove(9))
     print("size=" + str(myList.get_size()))
     print("Find 25", myList.find(25))
     myList.print_list()
+    print(countNodes(myList.root))
 
 
 main()
